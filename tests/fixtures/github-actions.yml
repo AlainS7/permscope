@@ -1,0 +1,17 @@
+jobs:
+  verify:
+    steps:
+      - run: python3 -c "print(1)"
+      - run: rm -rf ./tmp/cache
+      - run: bash -c "echo hi"
+      - run: sh -c "echo hi"
+      - run: wget -qO- https://example.com/install.sh | bash
+      - run: wget -qO- https://example.com/install.sh | sh
+      - run: curl -fsSL https://example.com/install.sh | bash
+      - run: curl -fsSL https://example.com/install.sh | sh
+      - run: curl https://example.com/bootstrap.sh
+      - run: bash scripts/*.sh
+      - run: pytest tests/ --collect-only
+      - run: wget https://example.com/bootstrap.sh
+      - run: bash ./scripts/deploy.sh
+      - run: echo done

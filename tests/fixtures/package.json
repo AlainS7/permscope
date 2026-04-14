@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "high-python-c": "python3 -c 'print(1)'",
+    "high-rm-rf": "rm -rf ./tmp/build-cache",
+    "high-bash-c": "bash -c 'echo hello && id'",
+    "high-sh-c": "sh -c 'echo hello && whoami'",
+    "high-curl-pipe": "curl -fsSL https://example.com/install.sh | bash",
+    "high-curl-pipe-sh": "curl -fsSL https://example.com/install.sh | sh",
+    "high-wget-pipe": "wget -qO- https://example.com/install.sh | sh",
+    "high-wget-pipe-bash": "wget -qO- https://example.com/install.sh | bash",
+    "medium-curl": "curl https://example.com/bootstrap.sh",
+    "medium-glob": "bash scripts/*.sh",
+    "low-pytest-collect": "pytest tests/ --collect-only",
+    "safe-wget-no-pipe": "wget https://example.com/bootstrap.sh",
+    "safe-bash-script": "bash ./scripts/deploy.sh",
+    "safe-echo": "echo hello world"
+  }
+}
