@@ -2,7 +2,7 @@
 
 > **Make hidden command risks visible.**
 
-PermScope is a VS Code extension that analyzes commands and permissions and shows their risk.
+[**PermScope**](https://marketplace.visualstudio.com/items?itemName=alains7.permscope) is a VS Code extension that analyzes commands and permissions and shows their risk.
 
 ## Demo
 
